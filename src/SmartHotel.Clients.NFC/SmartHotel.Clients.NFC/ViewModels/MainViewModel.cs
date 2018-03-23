@@ -6,6 +6,9 @@ using System;
 using System.Diagnostics;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Microsoft.Azure.Devices;
+using System.Threading.Tasks;
+using System.Text;
 
 namespace SmartHotel.Clients.NFC.ViewModels
 {
@@ -15,6 +18,7 @@ namespace SmartHotel.Clients.NFC.ViewModels
         private string _title;
         private string _subTitle;
         private string _avatar;
+        private static ServiceClient serviceClient;
 
         public MainViewModel()
         {
@@ -82,13 +86,25 @@ namespace SmartHotel.Clients.NFC.ViewModels
                     Avatar = nfcParameter.Avatar;
                     Percentage = 100;
                 }
+
+                serviceClient = ServiceClient.CreateFromConnectionString(MessengerKeys.iothubKey);
+                SendCloudToDeviceMessageAsync().Wait();
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Error();
 
                 Debug.WriteLine($"[NFC] Error: {ex}");
             }
+        }
+
+        private async static Task SendCloudToDeviceMessageAsync()
+        {
+            string mockedJsonData =
+                "{ \"Locked\":true}";
+            var commandMessage = new Message(Encoding.ASCII.GetBytes(mockedJsonData));
+            await serviceClient.SendAsync("AZ3166", commandMessage);
         }
 
         private void Reset()
