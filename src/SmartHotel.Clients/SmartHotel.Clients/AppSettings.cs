@@ -8,26 +8,32 @@ namespace SmartHotel.Clients.Core
     public static class AppSettings
     {
         // Endpoints
-        private const string DefaultBookingEndpoint = "YOUR_BOOKING_ENDPOINT";
-        private const string DefaultHotelsEndpoint = "YOUR_HOTELS_ENDPOINT";
-        private const string DefaultSuggestionsEndpoint = "YOUR_SUGGESTIONS_ENDPOINT";
-        private const string DefaultNotificationsEndpoint = "YOUR_NOTIFICATIONS_ENDPOINT";
+		private const string DefaultBookingEndpoint = "http://sh360services-public.eastus2.cloudapp.azure.com/bookings-api/";
+        private const string DefaultHotelsEndpoint = "http://sh360services-public.eastus2.cloudapp.azure.com/hotels-api/";
+        private const string DefaultSuggestionsEndpoint = "http://sh360services-public.eastus2.cloudapp.azure.com/suggestions-api/";
+        private const string DefaultNotificationsEndpoint = "http://sh360services-public.eastus2.cloudapp.azure.com/notifications-api/";
         private const string DefaultSettingsFileUrl = "http://sh360services-public.eastus2.cloudapp.azure.com/configuration-api/cfg/public-http";
-        private const string DefaultImagesBaseUri = "YOUR_IMAGE_BASE_URI";
+        private const string DefaultImagesBaseUri = "http://sh360imgpublic.blob.core.windows.net/";
+
+        // Mobile Center
+        private const string DefaultMobileCenterAnalyticsAndroid = "YOUR_APPCENTER_ANDROID_ANALYTICS_ID";
+        private const string DefaultMobileCenterAnalyticsIos = "fa45aed5-6c81-4033-a1f2-bf5cd7ea52e4";
+        private const string DefaultMobileCenterAnalyticsWindows = "YOUR_APPCENTER_WINDOWS_ANALYTICS_ID";
 
         // Maps
-        private const string DefaultBingMapsApiKey = "YOUR_BINGMAPS_API_KEY";
+        private const string DefaultBingMapsApiKey = "9D6ZuqeGpcfZ9PVYR1BQ~ofsY_N_KDywcNM-Y0Io5aA~AvqaBtSnHxFfX7flAqux2Q6eYSIreLwDxnswabgPlEOXmoEXXt6u1O6In0hqICy8";
         public const string DefaultFallbackMapsLocation = "40.762246 -73.986943";
 
         // Bots
-        private const string DefaultSkypeBotId = "YOUR_SKYPE_BOT_ID";
-        private const string DefaultFacebookBotId = "YOUR_FACEBOOK_BOT_ID";
+        private const string DefaultSkypeBotId = "897f3818-8da3-4d23-a613-9a0f9555f2ea";
+        private const string DefaultFacebookBotId = "120799875283148";
 
         // B2c
         public const string B2cAuthority = "https://login.microsoftonline.com/";
         public const string DefaultB2cPolicy = "B2C_1_SignUpInPolicy";
-        public const string DefaultB2cClientId = "YOUR_B2C_CLIENT_ID";
-        public const string DefaultB2cTenant = "YOUR_B2C_TENANT";
+        public const string DefaultB2cClientId = "b3cfbe11-ac36-4dcb-af16-8656ee286dcc";
+        public const string DefaultB2cTenant = "smarthotel360.onmicrosoft.com";
+
 
         // Booking 
         private const bool DefaultHasBooking = false;

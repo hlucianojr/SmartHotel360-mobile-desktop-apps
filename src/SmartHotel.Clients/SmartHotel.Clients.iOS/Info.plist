@@ -23,7 +23,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>SmartHotel</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.microsoft.SmartHotel360-df</string>
+	<string>com.bluemetal.SmartHotel360-df</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>
@@ -53,9 +53,9 @@
 		<string>fonts/Poppins-Medium.ttf</string>
 		<string>fonts/Poppins-Regular.ttf</string>
 		<string>fonts/Poppins-SemiBold.ttf</string>
-    <string>fonts/FiraSans-Bold.ttf</string>
-    <string>fonts/FiraSans-SemiBold.ttf</string>
-    <string>fonts/FiraSans-Regular.ttf</string>
+		<string>fonts/FiraSans-Bold.ttf</string>
+		<string>fonts/FiraSans-SemiBold.ttf</string>
+		<string>fonts/FiraSans-Regular.ttf</string>
 	</array>
 	<key>CFBundleName</key>
 	<string>SmartHotel.Clients</string>
