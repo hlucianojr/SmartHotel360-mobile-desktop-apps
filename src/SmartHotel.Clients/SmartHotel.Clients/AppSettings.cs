@@ -16,7 +16,7 @@ namespace SmartHotel.Clients.Core
         private const string DefaultImagesBaseUri = "http://sh360imgpublic.blob.core.windows.net/";
 
         // Mobile Center
-        private const string DefaultMobileCenterAnalyticsAndroid = "YOUR_APPCENTER_ANDROID_ANALYTICS_ID";
+        private const string DefaultMobileCenterAnalyticsAndroid = "92d2edae-ef86-4822-a200-ab74853e1947";
         private const string DefaultMobileCenterAnalyticsIos = "fa45aed5-6c81-4033-a1f2-bf5cd7ea52e4";
         private const string DefaultMobileCenterAnalyticsWindows = "YOUR_APPCENTER_WINDOWS_ANALYTICS_ID";
 
